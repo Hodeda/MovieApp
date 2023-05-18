@@ -28,8 +28,82 @@ body {
   padding-left: 3%;
 }
 
+.MoviePage {
+  margin: 5%;
+  color: white;
+  font-family: "Poppins";
+}
+
+.MovieMiddleSection {
+  display: flex;
+}
+
+.MovieInfo {
+  margin-left: 2%;
+  color: white;
+}
+
+.Label {
+  color: #ee9b00;
+}
+
+.MovieBottomHeader {
+  text-align: center;
+  color: #ee9b00;
+}
+
+.MovieBottomSection {
+  margin-top: 2%;
+}
+
+.DefaultMoviePageText {
+  text-align: center;
+  color: #ee9b00;
+}
+
+.Error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+.DefaultMoviePageHeader {
+  font-size: 3rem;
+  font-family: "Dosis";
+}
+
 @media (max-width: 550px) {
   .searchInput {
     width: 150px;
+  }
+  .MovieMiddleSection {
+    flex-direction: column;
+  }
+
+  .MovieInfo {
+    margin-top: 5%;
+  }
+
+  .MoviePage {
+    padding-bottom: 15%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
