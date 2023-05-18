@@ -7,4 +7,29 @@
 html,
 body {
   height: 100%;
+  background-color: #0c1e25;
+}
+
+.App {
+}
+
+.searchContainer {
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.searchInput {
+  width: 550px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  margin-right: 2%;
+  padding-left: 3%;
+}
+
+@media (max-width: 550px) {
+  .searchInput {
+    width: 150px;
+  }
 }
