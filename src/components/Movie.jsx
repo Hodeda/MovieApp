@@ -41,6 +41,7 @@ const Movie = ({movieName}) => {
       {isLoading && <Box sx={{ display: 'flex', alignItems:'center',justifyContent:'center' }}>
         <CircularProgress />
       </Box>}
+      {error && <p className='Error fade-in'>{error}</p>}
       {movie ? <div className='fade-in'>
           <div>
             <h1>{movie.Title}</h1>
@@ -75,7 +76,6 @@ const Movie = ({movieName}) => {
           <p className='DefaultMoviePageText'>Search and find your favorite movies effortlessly.</p>
         </div>
         }
-        {error && <p className='Error fade-in'>{error}</p>}
     </div>
   )
 }
