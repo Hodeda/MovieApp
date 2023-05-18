@@ -9,7 +9,7 @@ const Movie = ({movieName}) => {
   const [movie, setMovie] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
-  const apiKey = 'YOUR_API_KEY'
+  const apiKey = '3dc9d6c6'
 
   useEffect(() => {
     if(movieName==='') {
